@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>BLOTALOG</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+
+            <div class='dropdown'>
+		
+                <div class='title pointerCursor'><img id="menuicon" src="./static/img/menu.png" alt=""><i class="fa fa-angle-right"></i></div>
+                
+                <div class='menu pointerCursor hide'>
+                    <div class='option' id='nosotros'>nosotros</div>
+                    <div class='option' id='autos'>autos</div>
+                    <div class='option' id='camiones'>camiones</div>
+                    <div class='option' id='aviones'>aviones</div>
+                    <div class='option' id='barcos'>barcos</div>
+                </div>
+        
+            </div>         
+
+            <ul id="menuhome">
+
+                
+
+                <li ><img id="homeicon" src="./static/img/home.png" alt="home"></li>
+               
+            </ul>
+            <div id="divsearch">
+
+                <ul id="ulsearch">
+                    <input type="text" onkeyup="search_auto()" name="search" placeholder="buscar vehiculo" id="searchbar"/>
+
+                    <li ><img id="searchicon" src="./static/img/search.png" alt="search"></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    
+    <div id="portada">
+        <h1>BLOTALOG</h1>
+    </div>
+
+    <section id="wellcome">
+        <p>
+            Bien venido a BLOTALOG, un catálogo, no sé muy bien de qué, que tiene la posibilidad de postear blogs. <br/>
+            (al menos esa es la idea principal, despues veo como termina.)
+        </p>
+    </section>
+
+
+    <section id="box">
+        <div>
+        <h2 class="segmento">Calle:</h2>
+        <section class="segmento" id="box-uno" ><h6>calle</h6></section>
+        </div>
+
+        <div>
+        <h2 class="segmento">Carrera:</h2>
+        <section class="segmento" id="box-dos"><h6>carrera</h6></section>
+        </div>
+
+        <div>
+        <h2 class="segmento">Resistencia:</h2>
+        <section class="segmento" id="box-tres"><h6>resistencia</h6></section>    
+        </div>    
+
+        <div>
+        <h2 class="segmento">Camiones:</h2>
+        <section class="segmento" id="box-cuatro"><h6>camiones</h6></section>    
+        </div>
+    </section>
+
+    <footer>pie de pagina</footer>
+
+    <script src="./menu-desp.js"></script>
+    <script src="./autos.js"></script>
+    
+
+
+</body>
+</html>

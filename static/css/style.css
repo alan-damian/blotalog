@@ -1,0 +1,236 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(243, 242, 242);
+  background-image: url(../img/mercedes_sls.jpg);
+  background-attachment: fixed;
+  
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  z-index: 1;
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: space-evenly;
+  background-color: antiquewhite;
+  position: fixed;
+}
+/* menu desplegable */
+
+/* ------------------------------------------------------------- */
+
+
+.hide {
+    max-height: 0 !important;
+}
+
+.dropdown{
+  margin-block: auto;
+  width: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown .title{
+	margin: .3em .3em .3em .3em;	
+  width: 30%;
+}
+
+.dropdown .title .fa-angle-right{
+	float: right;
+	margin-right: .7em;
+	transition: transform .3s;
+}
+
+.dropdown .menu{
+	transition: max-height .5s ease-out;
+	max-height: 20em;
+	overflow: hidden;
+}
+
+.dropdown .menu .option{
+	margin: .3em .3em .3em .3em;
+	margin-top: 0.3em;
+}
+
+.dropdown .menu .option:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+.pointerCursor:hover{
+	cursor: pointer;
+}
+
+.rotate-90{
+	transform: rotate(90deg);
+}
+
+
+/* -------------------------------------------------------------- */
+
+#divsearch{
+  padding-top: 5px;
+}
+
+#ulsearch {    
+  background-color: rgb(91 215 174);
+  border-radius: 30px;
+  margin-left: 0%;
+  padding: 5px 5px 5px 40px;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin-left: -15%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+#menuicon {
+  margin-top: inherit;
+  padding-right: 5px;
+  width: 30px;
+}
+#homeicon {
+  width: 30px;
+}
+#searchicon {
+  width: 30px;
+}
+
+#portada {
+  opacity: 0.7;
+  padding-top: 55px;
+  height: 35vh;
+}
+
+#portada h1 {
+  border-radius: 5px;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: rgb(144, 117, 42);
+  padding-top: 35%;
+  padding-bottom: 35%;
+  text-align: center;
+  font-size:250%;
+  background-color: rgb(51, 0, 255);
+}
+
+#wellcome {
+  padding-top: 20%;
+  color: rgb(22, 25, 20);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(36, 198, 25);
+  height: 50vh;
+}
+
+#wellcome p {
+  padding: 15px;
+  font-family: fantasy;
+  font-size:xx-large;
+}
+
+#searchbar {
+  color: rgb(4, 28, 28);
+  border-color: rgba(240, 248, 255, 0);
+  margin-left: 15%;
+  background: top;
+  border-radius: 25px;
+}
+
+input [type=text] {
+  width: 30%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+
+input [type=text] :focus {
+  width: 70%;
+}
+
+.auto {
+  display: list-item;
+}
+
+#box {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.segmento {
+  margin-bottom: -13%;
+  color: aquamarine;
+}
+
+h6 {
+  opacity: 0;
+}
+
+#box-uno {
+  display: ruby-text;
+  background-image: url(../img/bmw_m3.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 20% -200% 40% -200%;
+  border-radius: 20px;
+  height: 300%;
+  background-color: rgba(69, 117, 101, 0.878);
+}
+
+#box-dos {
+  display: ruby-text;
+  background-image: url(../img/tatuusfa1_ks.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 20% -120% 25% -120%;
+  border-radius: 20px;
+  height: 300%;
+  background-color: rgba(69, 117, 101, 0.878);
+}
+
+#box-tres {
+  display: ruby-text;
+  background-image: url(../img/first_person_audi_r18.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 20% -75% 10% -75%;
+  border-radius: 20px;
+  height: 300%;
+  background-color: rgba(69, 117, 101, 0.878);
+}
+
+#box-cuatro {
+  display: ruby-text;
+  background-image: url(../img/camion_trailer.png);
+  background-size: cover;
+  background-position: center;
+  margin: 20% -90% 10% -90%;
+  border-radius: 20px;
+  height: 300%;
+  background-color: rgba(69, 117, 101, 0.878);
+}
+
+footer {
+  margin-top: 40%;
+  background-color: aqua;
+  height: 50px;
+}
